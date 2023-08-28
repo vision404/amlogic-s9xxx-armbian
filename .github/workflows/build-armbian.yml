@@ -21,8 +21,8 @@ on:
           - bookworm
       armbian_board:
         description: "Select device board."
-        required: false
-        default: "all"
+        required: true
+        default: "s905l3"
         type: choice
         options:
           - all
@@ -136,8 +136,8 @@ on:
           - tqc-a01
       armbian_kernel:
         description: "Select kernel version."
-        required: false
-        default: "5.15.1_6.1.1"
+        required: true
+        default: "5.4.1_5.10.1"
         type: choice
         options:
           - 5.4.1_5.10.1
